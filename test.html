@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body><center>
+    <h1>Тест</h1>
+    <b>Самая большая страна в мире?</b></br>
+    <b><input type="radio" name="vopros1"/>1.Россия</b></br>
+    <b><input type="radio" name="vopros1"/>2.Бразилия</b></br>
+    <b><input type="radio" name="vopros1"/>3.Китай</b></br>
+    <b><input type="radio" name="vopros1"/>4.Судан</b></br>
+    <b>Самая густо-населенная страна в мире?</b></br>
+    <b><input type="radio" name="vopros2"/>1.Россия</b></br>
+    <b><input type="radio" name="vopros2"/>2.CША</b></br>
+    <b><input type="radio" name="vopros2"/>3.Китай</b></br>
+    <b><input type="radio" name="vopros2"/>4.Иран</b></br>
+    <b>Самый большой остров в мире?</b></br>
+    <b><input type="radio" name="vopros3"/>1.Мадагаскар</b></br>
+    <b><input type="radio" name="vopros3"/>2.Гренландия</b></br>
+    <b><input type="radio" name="vopros3"/>3.Исландия</b></br>
+    <b><input type="radio" name="vopros3"/>4.Австралия</b></br>
+    <b>Самая длинная река в мире?</b></br>
+    <b><input type="radio" name="vopros4"/>1.Нил</b></br>
+    <b><input type="radio" name="vopros4"/>2.Волга</b></br>
+    <b><input type="radio" name="vopros4"/>3.Тигр</b></br>
+    <b><input type="radio" name="vopros4"/>4.Чуй</b></br>
+    <b>Самое глубоководное пресное озеро в мире?</b></br>
+    <b><input type="radio" name="vopros5"/>1.Ысык-Куль</b></br>
+    <b><input type="radio" name="vopros5"/>2.Байкал</b></br>
+    <b><input type="radio" name="vopros5"/>3.Верхнее</b></br>
+    <b><input type="radio" name="vopros5"/>4.Красный рак</b></br>
+    <button onclick="check()"><h1>Проверка</h1></button>
+    <h1 id="1">0</h1>
+</center>
+</body>
+<script>
+    i=0
+    function check() {
+        answer1=document.getElementsByName("vopros1")
+        for(q1=0;q1<answer1.length;q1++){
+            if(q1==0&&answer1[q1].checked==true)
+                answer1=true}
+        answer2=document.getElementsByName("vopros2")
+        for(q2=2;q2<answer2.length;q2++){
+            if(q2==2&&answer2[q2].checked==true)
+                answer2=true}
+        answer3=document.getElementsByName("vopros3")
+        for(q3=1;q3<answer3.length;q3++){
+            if(q3==1&&answer3[q3].checked==true)
+                answer3=true}
+        answer4=document.getElementsByName("vopros4")
+        for(q4=0;q4<answer4.length;q4++){
+            if(q4==0&&answer4[q4].checked==true)
+                answer4=true}
+        answer5=document.getElementsByName("vopros5")
+        for(q5=1;q5<answer5.length;q5++){
+            if(q5==1&&answer5[q5].checked==true)
+                answer5=true}
+
+                console.log(answer1, answer2, answer3, answer4, answer5)
+        if(answer1==true&&answer2==true&&answer3==true&&answer4==true&&answer5==true){
+            i="вы молодец,5!"
+            alert(i)
+        }
+    }
+</script>
+</html>
